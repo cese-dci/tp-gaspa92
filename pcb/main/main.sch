@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "LoRa-node"
 Date "2021-03-20"
-Rev "revsss"
+Rev "A"
 Comp ""
 Comment1 "* Creative Commons Attribution-ShareAlike 4.0 International License"
 Comment2 "Author: Gaspar Santamarina"
