@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "LoRa-node"
+Title "LoRa-node replica"
 Date "2021-03-20"
 Rev "A"
 Comp ""
 Comment1 "* Creative Commons Attribution-ShareAlike 4.0 International License"
 Comment2 "Author: Gaspar Santamarina"
-Comment3 ""
+Comment3 "Revisor: Ivan Szkrabko"
 Comment4 ""
 $EndDescr
 $Comp
@@ -32,6 +32,7 @@ F 0 "U3" H 5850 5050 50  0000 C CNN
 F 1 "ATmega328P-AU" H 5850 4950 50  0000 C CNN
 F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 6250 3500 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 6250 3500 50  0001 C CNN
+F 4 "ATMEGA328P-AU-ND" H 6250 3500 50  0001 C CNN "Digikey PN"
 	1    6250 3500
 	1    0    0    -1  
 $EndComp
@@ -390,8 +391,9 @@ U 1 1 60A742F6
 P 1900 3150
 F 0 "Y1" H 1900 2900 50  0000 C CNN
 F 1 "12MHz" H 1900 3000 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_HC49-SD_HandSoldering" H 1900 3150 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 1900 3150 50  0001 C CNN
 F 3 "~" H 1900 3150 50  0001 C CNN
+F 4 "1923-1541-1-ND " H 1900 3150 50  0001 C CNN "Digikey PN"
 	1    1900 3150
 	-1   0    0    1   
 $EndComp
@@ -453,6 +455,7 @@ F 0 "J1" H 1250 3000 50  0000 C CNN
 F 1 "USB_B_Micro" H 1250 2900 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1400 2500 50  0001 C CNN
 F 3 "~" H 1400 2500 50  0001 C CNN
+F 4 "WM17141CT-ND" H 1250 2550 50  0001 C CNN "Digikey PN"
 	1    1250 2550
 	1    0    0    -1  
 $EndComp
@@ -578,10 +581,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 2850 7000 2850
 Wire Wire Line
-	6850 3100 6950 3100
-Wire Wire Line
-	6850 3200 6950 3200
-Wire Wire Line
 	6850 3300 6950 3300
 Wire Wire Line
 	6850 3400 6950 3400
@@ -593,10 +592,6 @@ Wire Wire Line
 	6850 3700 6950 3700
 Wire Wire Line
 	6850 3800 6950 3800
-Wire Wire Line
-	8550 2550 8350 2550
-Wire Wire Line
-	8550 2650 8350 2650
 Wire Wire Line
 	8550 2750 8450 2750
 NoConn ~ 1550 2750
@@ -618,8 +613,6 @@ Wire Wire Line
 	5650 2350 5300 2350
 Wire Wire Line
 	5300 2350 5300 2400
-Wire Wire Line
-	5450 3450 5650 3450
 $Comp
 L power:GND #PWR05
 U 1 1 610490BA
@@ -796,17 +789,6 @@ Wire Wire Line
 	4700 2950 4700 3250
 Wire Wire Line
 	5650 2950 4700 2950
-$Comp
-L Device:Crystal Y2
-U 1 1 60BF952A
-P 4950 3250
-F 0 "Y2" H 4950 3500 50  0000 C CNN
-F 1 "32.768Hz" H 4950 3400 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_Abracon_ABS25-4Pin_8.0x3.8mm" H 4950 3250 50  0001 C CNN
-F 3 "~" H 4950 3250 50  0001 C CNN
-	1    4950 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4800 3250 4700 3250
 Wire Wire Line
@@ -907,17 +889,16 @@ Wire Notes Line
 	8100 1100 8100 3750
 Wire Notes Line
 	10800 1100 10800 3750
-Wire Wire Line
-	8550 2450 8400 2450
 $Comp
 L Device:Battery BT1
 U 1 1 6057002D
-P 10100 5400
-F 0 "BT1" H 9950 5550 50  0000 L CNN
-F 1 "3.7V" H 9900 5250 50  0000 L CNN
-F 2 "Battery:BatteryHolder_MPD_BH-18650-PC2" V 10100 5460 50  0001 C CNN
-F 3 "~" V 10100 5460 50  0001 C CNN
-	1    10100 5400
+P 10100 5600
+F 0 "BT1" H 9950 5750 50  0000 L CNN
+F 1 "3.7V" H 9900 5450 50  0000 L CNN
+F 2 "Battery:BatteryHolder_MPD_BH-18650-PC2" V 10100 5660 50  0001 C CNN
+F 3 "~" V 10100 5660 50  0001 C CNN
+F 4 "BH-18650-PC-ND" H 10100 5600 50  0001 C CNN "Digikey PN"
+	1    10100 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -928,6 +909,7 @@ F 0 "U2" H 8750 5842 50  0000 C CNN
 F 1 "TLV70033" H 8750 5751 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8750 5825 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv700.pdf" H 8750 5550 50  0001 C CNN
+F 4 "296-25276-1-ND " H 8750 5500 50  0001 C CNN "Digikey PN"
 	1    8750 5500
 	1    0    0    -1  
 $EndComp
@@ -1099,84 +1081,82 @@ Wire Wire Line
 $Comp
 L custom:VBAT #PWR022
 U 1 1 60B7C463
-P 10100 4950
-F 0 "#PWR022" H 10100 4800 50  0001 C CNN
-F 1 "VBAT" H 10115 5123 50  0000 C CNN
-F 2 "" H 10100 4950 50  0001 C CNN
-F 3 "" H 10100 4950 50  0001 C CNN
-	1    10100 4950
+P 10100 5150
+F 0 "#PWR022" H 10100 5000 50  0001 C CNN
+F 1 "VBAT" H 10115 5323 50  0000 C CNN
+F 2 "" H 10100 5150 50  0001 C CNN
+F 3 "" H 10100 5150 50  0001 C CNN
+	1    10100 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10400 5400 10550 5400
+	10400 5600 10550 5600
 $Comp
 L power:GND #PWR023
 U 1 1 607F2BCB
-P 10100 5850
-F 0 "#PWR023" H 10100 5600 50  0001 C CNN
-F 1 "GND" H 10105 5677 50  0000 C CNN
-F 2 "" H 10100 5850 50  0001 C CNN
-F 3 "" H 10100 5850 50  0001 C CNN
-	1    10100 5850
+P 10100 6050
+F 0 "#PWR023" H 10100 5800 50  0001 C CNN
+F 1 "GND" H 10105 5877 50  0000 C CNN
+F 2 "" H 10100 6050 50  0001 C CNN
+F 3 "" H 10100 6050 50  0001 C CNN
+	1    10100 6050
 	1    0    0    -1  
 $EndComp
-Text Label 10550 5400 2    50   ~ 0
+Text Label 10550 5600 2    50   ~ 0
 A7
 Wire Wire Line
-	10400 5400 10400 5350
-Connection ~ 10400 5400
+	10400 5600 10400 5550
+Connection ~ 10400 5600
 Wire Wire Line
-	10400 5450 10400 5400
+	10400 5650 10400 5600
 $Comp
 L Device:R R5
 U 1 1 607A6331
-P 10400 5600
-F 0 "R5" H 10470 5646 50  0000 L CNN
-F 1 "1K" H 10470 5555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10330 5600 50  0001 C CNN
-F 3 "~" H 10400 5600 50  0001 C CNN
-	1    10400 5600
+P 10400 5800
+F 0 "R5" H 10470 5846 50  0000 L CNN
+F 1 "1K" H 10470 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10330 5800 50  0001 C CNN
+F 3 "~" H 10400 5800 50  0001 C CNN
+	1    10400 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 607A5C90
-P 10400 5200
-F 0 "R4" H 10470 5246 50  0000 L CNN
-F 1 "1K" H 10470 5155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10330 5200 50  0001 C CNN
-F 3 "~" H 10400 5200 50  0001 C CNN
-	1    10400 5200
+P 10400 5400
+F 0 "R4" H 10470 5446 50  0000 L CNN
+F 1 "1K" H 10470 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10330 5400 50  0001 C CNN
+F 3 "~" H 10400 5400 50  0001 C CNN
+	1    10400 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10100 5000 10100 5200
+	10100 5200 10100 5400
 Wire Wire Line
-	10100 5800 10100 5600
+	10100 6000 10100 5800
 Wire Wire Line
-	10400 5750 10400 5800
+	10400 5950 10400 6000
 Wire Wire Line
-	10100 5000 10400 5000
+	10100 5200 10400 5200
 Wire Wire Line
-	10400 5000 10400 5050
+	10400 5200 10400 5250
 Wire Wire Line
-	10400 5800 10100 5800
+	10400 6000 10100 6000
 Wire Notes Line
 	7000 4600 7000 6300
 Wire Notes Line
 	7000 6300 10800 6300
 Wire Notes Line
 	10800 6300 10800 4600
-Wire Notes Line
-	10800 4600 7000 4600
 Text Notes 7050 4750 0    50   ~ 0
 Power & Battery
 Wire Wire Line
-	10100 5850 10100 5800
-Connection ~ 10100 5800
+	10100 6050 10100 6000
+Connection ~ 10100 6000
 Wire Wire Line
-	10100 5000 10100 4950
-Connection ~ 10100 5000
+	10100 5200 10100 5150
+Connection ~ 10100 5200
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 6141991D
@@ -1193,17 +1173,17 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG04
 U 1 1 60AE3A87
-P 10400 4950
-F 0 "#FLG04" H 10400 5025 50  0001 C CNN
-F 1 "PWR_FLAG" H 10500 5100 50  0000 C CNN
-F 2 "" H 10400 4950 50  0001 C CNN
-F 3 "~" H 10400 4950 50  0001 C CNN
-	1    10400 4950
+P 10400 5150
+F 0 "#FLG04" H 10400 5225 50  0001 C CNN
+F 1 "PWR_FLAG" H 10500 5300 50  0000 C CNN
+F 2 "" H 10400 5150 50  0001 C CNN
+F 3 "~" H 10400 5150 50  0001 C CNN
+	1    10400 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10400 5000 10400 4950
-Connection ~ 10400 5000
+	10400 5200 10400 5150
+Connection ~ 10400 5200
 Wire Notes Line
 	7000 4800 7750 4800
 Wire Notes Line
@@ -1254,21 +1234,17 @@ Wire Wire Line
 Wire Wire Line
 	3750 5050 3750 5000
 Wire Wire Line
-	2450 5000 2700 5000
-Wire Wire Line
-	2450 5050 2450 5000
+	2550 5000 2700 5000
 Wire Wire Line
 	3550 4900 3500 4900
 Wire Wire Line
 	3550 4850 3550 4900
-Text Label 3600 5100 2    50   ~ 0
+Text Label 3600 5700 2    50   ~ 0
 A6
 Wire Wire Line
 	3500 5800 3700 5800
 Wire Wire Line
 	3500 5900 3600 5900
-Wire Wire Line
-	3650 6000 3500 6000
 $Comp
 L Connector_Generic:Conn_01x12 J4
 U 1 1 60821A9F
@@ -1281,9 +1257,9 @@ F 3 "~" H 3300 5400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 5900 2700 5900
+	2600 5900 2700 5900
 Wire Wire Line
-	2500 6000 2700 6000
+	2600 6000 2700 6000
 $Comp
 L power:GND #PWR041
 U 1 1 60801EAC
@@ -1308,35 +1284,35 @@ F 3 "" H 3550 4850 50  0001 C CNN
 	1    3550 4850
 	1    0    0    -1  
 $EndComp
-Text Label 3600 5200 2    50   ~ 0
+Text Label 3600 5600 2    50   ~ 0
 A5
-Text Label 3600 5300 2    50   ~ 0
+Text Label 3600 5500 2    50   ~ 0
 A4
 Text Label 3600 5400 2    50   ~ 0
 A3
-Text Label 3600 5500 2    50   ~ 0
+Text Label 3600 5300 2    50   ~ 0
 A2
-Text Label 3600 5600 2    50   ~ 0
+Text Label 3600 5200 2    50   ~ 0
 A1
-Text Label 3600 5700 2    50   ~ 0
+Text Label 3600 5100 2    50   ~ 0
 A0
 Text Label 3600 5900 2    50   ~ 0
 SS
-Text Label 3650 6000 2    50   ~ 0
+Text Label 2550 5000 0    50   ~ 0
 SCK
-Text Label 2500 6000 0    50   ~ 0
+Text Label 2550 5100 0    50   ~ 0
 MISO
-Text Label 2500 5900 0    50   ~ 0
+Text Label 2550 5200 0    50   ~ 0
 MOSI
-Text Label 2600 5800 0    50   ~ 0
+Text Label 2600 5300 0    50   ~ 0
 D7
-Text Label 2600 5700 0    50   ~ 0
-D6
-Text Label 2600 5600 0    50   ~ 0
-D5
-Text Label 2600 5500 0    50   ~ 0
-D4
 Text Label 2600 5400 0    50   ~ 0
+D6
+Text Label 2600 5500 0    50   ~ 0
+D5
+Text Label 2600 5600 0    50   ~ 0
+D4
+Text Label 2600 5700 0    50   ~ 0
 D3
 Wire Wire Line
 	2600 5800 2700 5800
@@ -1354,26 +1330,11 @@ Wire Wire Line
 	2700 4900 2550 4900
 Text Label 2550 4900 0    50   ~ 0
 RST
-Text Label 2600 5300 0    50   ~ 0
+Text Label 2600 5800 0    50   ~ 0
 D2
-$Comp
-L power:GND #PWR035
-U 1 1 60640B60
-P 2450 5050
-F 0 "#PWR035" H 2450 4800 50  0001 C CNN
-F 1 "GND" H 2455 4877 50  0000 C CNN
-F 2 "" H 2450 5050 50  0001 C CNN
-F 3 "" H 2450 5050 50  0001 C CNN
-	1    2450 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 5200 2700 5200
-Wire Wire Line
-	2700 5100 2600 5100
-Text Label 2600 5100 0    50   ~ 0
+Text Label 2600 6000 0    50   ~ 0
 RX
-Text Label 2600 5200 0    50   ~ 0
+Text Label 2600 5900 0    50   ~ 0
 TX
 $Comp
 L Connector_Generic:Conn_01x12 J2
@@ -1549,6 +1510,7 @@ F 0 "Q1" V 7942 5350 50  0000 C CNN
 F 1 "DMP3099L" V 7851 5350 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7800 5275 50  0001 L CIN
 F 3 "https://www.diodes.com/assets/Datasheets/DMP3099L.pdf" H 7600 5350 50  0001 L CNN
+F 4 "DMP3099L-7DICT-ND" V 7600 5350 50  0001 C CNN "Digikey PN"
 	1    7600 5350
 	0    -1   -1   0   
 $EndComp
@@ -1560,6 +1522,7 @@ F 0 "D1" H 7850 5383 50  0000 C CNN
 F 1 "MBR0520" H 7850 5474 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 7850 5425 50  0001 C CNN
 F 3 "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf" H 7850 5600 50  0001 C CNN
+F 4 "MBR0520LT1GOSCT-ND " H 7850 5600 50  0001 C CNN "Digikey PN"
 	1    7850 5600
 	-1   0    0    1   
 $EndComp
@@ -1581,7 +1544,7 @@ U 1 1 607C825D
 P 10500 2100
 F 0 "AE1" H 10550 2200 50  0000 L CNN
 F 1 "Antenna-LoRa-915" H 9950 2350 50  0000 L CNN
-F 2 "custom_lib:antenna-lora-915" H 10500 2200 50  0001 C CNN
+F 2 "custom:antenna-lora-915" H 10500 2200 50  0001 C CNN
 F 3 "~" H 10500 2200 50  0001 C CNN
 	1    10500 2100
 	1    0    0    -1  
@@ -1593,4 +1556,81 @@ Wire Wire Line
 Wire Wire Line
 	10500 2450 10200 2450
 Connection ~ 10200 2450
+$Comp
+L Device:Crystal_GND23 Y2
+U 1 1 608F32C0
+P 4950 3250
+F 0 "Y2" H 5050 3400 50  0000 L CNN
+F 1 "32.768 Hz" H 4950 3500 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABS25-4Pin_8.0x3.8mm" H 4950 3250 50  0001 C CNN
+F 3 "~" H 4950 3250 50  0001 C CNN
+F 4 "535-9166-1-ND" H 4950 3250 50  0001 C CNN "Digikey PN"
+	1    4950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 608FA459
+P 4950 3500
+F 0 "#PWR0101" H 4950 3250 50  0001 C CNN
+F 1 "GND" H 4955 3327 50  0000 C CNN
+F 2 "" H 4950 3500 50  0001 C CNN
+F 3 "" H 4950 3500 50  0001 C CNN
+	1    4950 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3500 4950 3450
+$Comp
+L power:GND #PWR0102
+U 1 1 609095A3
+P 4600 2750
+F 0 "#PWR0102" H 4600 2500 50  0001 C CNN
+F 1 "GND" H 4605 2577 50  0000 C CNN
+F 2 "" H 4600 2750 50  0001 C CNN
+F 3 "" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3050 4950 2700
+Wire Wire Line
+	4950 2700 4600 2700
+Wire Wire Line
+	4600 2700 4600 2750
+Wire Wire Line
+	2550 5200 2700 5200
+Wire Wire Line
+	2550 5100 2700 5100
+$Comp
+L power:GND #PWR035
+U 1 1 60640B60
+P 3750 6050
+F 0 "#PWR035" H 3750 5800 50  0001 C CNN
+F 1 "GND" H 3755 5877 50  0000 C CNN
+F 2 "" H 3750 6050 50  0001 C CNN
+F 3 "" H 3750 6050 50  0001 C CNN
+	1    3750 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 6000 3750 6050
+Wire Wire Line
+	3500 6000 3750 6000
+Wire Notes Line
+	10800 4600 7000 4600
+Wire Wire Line
+	6850 3200 6950 3200
+Wire Wire Line
+	6850 3100 6950 3100
+Wire Wire Line
+	8550 2450 8400 2450
+Wire Wire Line
+	5450 3450 5650 3450
+Wire Wire Line
+	8550 2550 8350 2550
+Wire Wire Line
+	8550 2650 8350 2650
+Text Notes 10000 4850 0    50   ~ 0
+Battery holder\n    18650
 $EndSCHEMATC
