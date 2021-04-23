@@ -1633,4 +1633,62 @@ Wire Wire Line
 	8550 2650 8350 2650
 Text Notes 10000 4850 0    50   ~ 0
 Battery holder\n    18650
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 60A03FB7
+P 5250 4900
+F 0 "FID1" H 5335 4946 50  0000 L CNN
+F 1 "Fiducial" H 5335 4855 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 5250 4900 50  0001 C CNN
+F 3 "~" H 5250 4900 50  0001 C CNN
+	1    5250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 60A05225
+P 5250 5100
+F 0 "FID2" H 5335 5146 50  0000 L CNN
+F 1 "Fiducial" H 5335 5055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 5250 5100 50  0001 C CNN
+F 3 "~" H 5250 5100 50  0001 C CNN
+	1    5250 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 60A05624
+P 5250 5300
+F 0 "FID3" H 5335 5346 50  0000 L CNN
+F 1 "Fiducial" H 5335 5255 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 5250 5300 50  0001 C CNN
+F 3 "~" H 5250 5300 50  0001 C CNN
+	1    5250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 60A05ABC
+P 5250 5500
+F 0 "FID4" H 5335 5546 50  0000 L CNN
+F 1 "Fiducial" H 5335 5455 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 5250 5500 50  0001 C CNN
+F 3 "~" H 5250 5500 50  0001 C CNN
+	1    5250 5500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5850 4600 5000 4600
+Text Notes 5050 4700 0    50   ~ 0
+Fiducial
+Wire Notes Line
+	5000 4750 5400 4750
+Wire Notes Line
+	5400 4750 5400 4600
+Wire Notes Line
+	5000 5650 5850 5650
+Wire Notes Line
+	5850 4600 5850 5650
+Wire Notes Line
+	5000 4600 5000 5650
 $EndSCHEMATC
