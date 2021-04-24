@@ -1686,9 +1686,20 @@ Wire Notes Line
 Wire Notes Line
 	5400 4750 5400 4600
 Wire Notes Line
-	5000 5650 5850 5650
+	5000 5850 5850 5850
+$Comp
+L Mechanical:Fiducial FID5
+U 1 1 60860524
+P 5250 5700
+F 0 "FID5" H 5335 5746 50  0000 L CNN
+F 1 "Fiducial" H 5335 5655 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 5250 5700 50  0001 C CNN
+F 3 "~" H 5250 5700 50  0001 C CNN
+	1    5250 5700
+	1    0    0    -1  
+$EndComp
 Wire Notes Line
-	5850 4600 5850 5650
+	5850 4600 5850 5850
 Wire Notes Line
-	5000 4600 5000 5650
+	5000 4600 5000 5850
 $EndSCHEMATC
